@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">"Практическая работа №2"</string>
+    <string name="Решение_квадратного_уравнения">Жуматов Арман Манарбекович CS-202(c):</string>
+    <string name="button_name">Введите текст и нажмите на кнопку</string>
+    <string name="a">a=</string>
+    <string name="ответ">Ответ:</string>
+    <string name="решить">РЕШИТЬ</string>
+    <string name="решение">Решение квадратного уравнения:</string>
+    <string name="b">b=</string>
+    <string name="c">c=</string>
+    <string name="x">x=</string>
+</resources>

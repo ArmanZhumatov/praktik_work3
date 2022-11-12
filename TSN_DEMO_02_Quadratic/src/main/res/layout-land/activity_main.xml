@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Основная линейная разметка элементов по-вертикали и по-центру экрана -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E30E0E"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!-- Текстовая надпись -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E40707"
+        android:gravity="center"
+        android:text="@string/решение"
+        android:textColor="#FAFAFA"
+        tools:ignore="HardcodedText" />
+
+    <!-- Вложенная линейная разметка элементов по-горизонтали -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Текстовая надпись -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textColor="#EFEDED" />
+
+        <!-- Поле ввода числа со знаком для "a" -->
+        <EditText
+            android:id="@+id/editText_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|text"
+            android:textColor="#E3DDDD"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <!-- Текстовая надпись -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15sp"
+            android:text="@string/b"
+            android:textColor="#ECE7E7"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <!-- Поле ввода числа со знаком для "b" -->
+        <EditText
+            android:id="@+id/editText_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="number|text"
+            android:textColor="#F3EFEF"
+            tools:ignore="LabelFor,TouchTargetSizeCheck" />
+
+        <!-- Текстовая надпись -->
+
+        <!-- Поле ввода числа со знаком для "c" -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15sp"
+            android:text="@string/x"
+            android:textColor="#E8E3E3"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/editText_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|text"
+            android:textColor="#F3EFEF"
+            android:autofillHints=""
+            tools:ignore="DuplicateIds,LabelFor" />
+
+    </LinearLayout>
+
+    <!-- Кнопка для расчета -->
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5D6D6"
+        android:onClick="onClick"
+        android:shadowColor="#EDE6E6"
+        android:text="РЕШИТЬ"
+        android:textColor="#00695C"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <!-- Текстовая надпись -->
+    <TextView
+        android:id="@+id/textView_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/button_name"
+        android:textColor="#EAE1E1"
+        tools:ignore="HardcodedText" />
+
+    <!-- Вложенная линейная разметка элементов по-горизонтали -->
+
+
+</LinearLayout>
